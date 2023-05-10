@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="main.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Rating state start -->
+  
+  
+  <main id="ratingState"class="rounded-5">
+    <img class="rounded-circle" src="images/icon-star.svg" alt="icon star" id="iconstar" >
+    <h1>How did we do?</h1> 
+
+    Please let us know how we did with your support request. All feedback is appreciated 
+    to help us improve our offering!
+    <div id="buttonlist">
+      <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+      <label class="btn btn-dark rounded-circle" for="option1">1</label>
+      <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off" checked>
+      <label class="btn btn-dark  rounded-circle" for="option2">2</label>
+      <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" checked>
+      <label class="btn btn-dark rounded-circle" for="option3">3</label>
+      <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off" checked>
+      <label class="btn btn-dark rounded-circle" for="option4">4</label>
+      <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off" checked>
+      <label class="btn btn-dark rounded-circle" for="option5">5</label>
+    </div>
+     
+   <button class="Submit" id="it1">Submit</button>
+  
+  </main>
+  
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <main id="ThankYouState"class="rounded-5">
+  <img src="images/illustration-thank-you.svg" alt="Thank You " >
+  <span id="showrating">You selected <!-- Add rating here --> out of 5</span>
+
+  <h1>Thank you!</h1> 
+
+  <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p> 
+  </main>
+
+  
+
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
