@@ -51,7 +51,7 @@ label{
 }
 .Submit{
     height: 45px;
-    width: 100%;
+    width: 95%;
     text-align: center;
     background-color: hsl(25, 97%, 53%);
     border: 0;
@@ -91,12 +91,4 @@ label{
 #ratingState{
    padding: 30px;
 
-}
-@media screen and (max-width:5.5in) {
-    main{
-        width: 330px;
-        white-space: pre-wrap;
-        height: auto;
-    }
-    
 }
