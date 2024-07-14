@@ -1,24 +1,25 @@
 
-var a = document.getElementById("it1");
+const btnSubmit= document.getElementById("submit");
 
-
-var options = document.getElementsByName("options");
-var showra = document.getElementById("showrating");
-
-var b = 0;
-a.onclick=function(){
-    document.getElementById("ThankYouState").style.display="grid";
-    
-    document.getElementById("ratingState").style.display="none";
-
-    for(var i =0 ;i<=options.length;i++){
-        if(options[i].checked==true){
-            b = i+1;
-            
-            showra.innerHTML="You selected "+b+" out of 5";
-            break;
-        }
-    }
-
-
+const obj={
+    thankUState :document.getElementById("ThankYouState"),
+    ratingState :document.getElementById("ratingState"),
+    options :[...document.getElementsByName("options")],
+    showra:document.getElementById("showrating")
 }
+
+function show(){
+    this.thankUState.style.display="grid";
+    
+    this.ratingState.style.display="none";
+    const numRating = this.options.find(entry =>entry.checked===true).dataset.num 
+    
+            
+    this.showra.innerHTML=`You selected ${numRating} out of 5`;
+            
+        
+    
+    
+}
+
+btnSubmit.addEventListener('click',show.bind(obj))
